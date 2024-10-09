@@ -33,8 +33,16 @@
 
         mostrar(`O IMC de ${nome} é: ${ calculaIMC(alturaImformada, pesoInformado)}`)
 
-
         //mostrar (`O imc da Cibelly é: ${calculaIMC(1.70, 68)}`)
+
+        if (imc < 18.5){
+            mostrar(`${nome}, seu IMC está abaixo do normal `)
+            } else if(imc > 25){
+                mostrar(`${nome}, seu IMC está acima do normal`)
+            } else {
+                mostrar(`${nome}, seu IMC está normal `)
+            }
+        
     </script>
     
 </body>
